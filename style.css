@@ -56,7 +56,7 @@
     bottom: 750px;
     left: 330px;
 }
-.name{
+#name{
     margin: 60px 0px 0px 25px;
 }
 .location{
@@ -77,13 +77,15 @@
     position:absolute;
     bottom: 565px;
     left: 320px;
-    top: 450px;
+    top: 435px;
     
 }
 .edit{
     position: absolute;
-    bottom: 535px;
+    bottom: 550px;
     left: 360px;
+    border: none;
+    background-color: white;
 }
 
 #education{

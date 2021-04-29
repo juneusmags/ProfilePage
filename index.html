@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <link rel="stylesheet" href="style.css">\
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,10 +22,10 @@
         <div class="left">
             <div class="info">
                 <img class="propic" src ="icons/user-circle.png">
-                <h1 class="name">Jane Doe</h1>
+                <h1 id="name">Jane Doe</h1>
                 <p class="location"><img class="marker" src ="icons/map-marker.png">Seattle</p>
                 <p class="desc">Developer | Engineer | Problem Solver</p>
-                <a class="edit" href="">edit profile</a>
+                <button class="edit" onclick='document.getElementById("name").innerHTML="John Gift"'>edit profile</button>
                 <img class="gear" src="icons/gear.png">
             </div>
             <div id="education">
@@ -42,17 +42,17 @@
                     <h1 class="title">Connection Requests</h1>
                     
                 </div>
-                <div class="tod">
+                <div class="tod" id="hide">
                     <img src="icons/user-circle.png">
                     <p> Todd E</p>
-                    <img src="icons/accept-circle.png">
-                    <img src="icons/close-circle.png">
+                    <img onclick="hide()" src="icons/accept-circle.png">
+                    <img onclick="hide()"src="icons/close-circle.png">
                 </div>
-                <div class="tod">
+                <div class="tod" id="hide2">
                     <img src="icons/user-circle.png">
                     <p> Phil K</p>
-                    <img src="icons/accept-circle.png">
-                    <img src="icons/close-circle.png">
+                    <img onclick="hide2()" src="icons/accept-circle.png">
+                    <img onclick="hide2()" src="icons/close-circle.png">
                 </div>
             </div>
 
@@ -89,6 +89,6 @@
             </div>
         </div>
     </div>
-    
+<script src="java.js"></script>
 </body>
 </html>
